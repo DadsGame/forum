@@ -10,4 +10,6 @@ public interface GameTopicService {
     List<GameTopic> getAllGameTopic();
 
     Optional<GameTopic> getGameTopicById(int idGame);
+
+    GameTopic save(GameTopic gameTopic);
 }
