@@ -1,9 +1,6 @@
 package dadsgame.forum.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import net.minidev.json.annotate.JsonIgnore;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
@@ -15,6 +12,7 @@ import javax.persistence.*;
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Getter
 @Setter
 
