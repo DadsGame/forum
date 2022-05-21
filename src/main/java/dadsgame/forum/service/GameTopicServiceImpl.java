@@ -23,4 +23,9 @@ public class GameTopicServiceImpl implements GameTopicService {
     public Optional<GameTopic> getGameTopicById(int idGame) {
         return gameTopicRepository.findById(idGame);
     }
+
+    @Override
+    public GameTopic save(GameTopic gameTopic) {
+        return gameTopicRepository.save(gameTopic);
+    }
 }
